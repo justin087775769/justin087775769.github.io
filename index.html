@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: "Helvetica Neue", sans-serif;
-      background-color: #d9d9d9;
+      background: linear-gradient(to bottom, #d9d9d9, #ffffff);
       color: #333;
       text-align: center;
       padding: 40px;
@@ -15,12 +15,17 @@
     h1 {
       color: #2c3e50;
       font-size: 2.8em;
+      animation: fadeInDown 1s ease;
+    }
+    h2 {
+      animation: fadeInUp 1s ease;
     }
     p {
       font-size: 1.2em;
       line-height: 1.6;
       max-width: 700px;
       margin: 0 auto 20px;
+      animation: fadeIn 1s ease;
     }
     .tag {
       display: inline-block;
@@ -30,11 +35,34 @@
       color: white;
       border-radius: 20px;
       font-size: 0.9em;
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
     }
     footer {
       margin-top: 50px;
       font-size: 0.9em;
       color: #888;
+    }
+    img {
+      max-width: 90%;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.03);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -46,13 +74,15 @@
   <p>我家還有一隻黑柴狗，牠很活潑，有時候調皮，但也很黏人，是我每天回家最期待的溫暖。</p>
   <p>平常我也喜歡到外面走走，尤其是去海邊，吹吹海風、放空一下，會讓我覺得心情變得很好。</p>
   <p>音樂也是我生活的一部分，我很喜歡聽歐美的嘻哈和西洋音樂，節奏感很強，聽了會有動力。</p>
-    <p>朋友們說我是一個蠻隨和、講話實在的人，平常就喜歡簡單自在的生活，有時候熱血、有時候也很 chill。</p>
+  <p>朋友們說我是一個蠻隨和、講話實在的人，平常就喜歡簡單自在的生活，有時候熱血、有時候也很 chill。</p>
   <h2 style="margin-top: 60px; font-size: 2em; color: #2c3e50;">玩車日記！</h2>
   <p>我真的超愛改車，尤其是偉士牌這種有靈魂的車種。它的外型經典又耐看，重點是改起來真的有夠好玩。從細節開始慢慢調整，像是手把、輪框、外觀件、燈殼，每換一樣東西就像幫它換了一個個性，有時帥、有時可愛、有時殺氣。</p>
+  <p>在改車的過程中，我特別注重選擇一些性能又有質感的品牌。像避震器我會選 OHLINS、鯊魚工廠、智傑 GJMS 這幾個都很有名也很好用；輪框方面喜歡鍛造系列，例如 AM、桃子、R mini，輕盈又耐看。排氣管我偏好蠍子管，聲音渾厚很有辨識度，煞車系統則是經典的 Brembo，不只安全，質感也到位。</p>
+  <p>煞車系統我也有升級，用的是 Brembo，不只帥，煞車手感也更穩。其實我還接觸很多其他改裝品牌，像把手、握把、油杯、車燈等等，都是慢慢累積出來的經驗，也讓每次改車都有新的樂趣。</p>
   <p>我最喜歡看著車慢慢變成自己腦海中想像的樣子，那種從無到有、從原廠到個性化的過程，會讓人一改再改、越改越上癮。每次騎出去看到回頭率，真的會有一種「對，這就是我弄出來的」的爽感。</p>
   <p>有時候也會跟朋友一起改，一起交流，一起趴趴走，改車這件事不只是興趣，更是一種生活方式。</p>
   <p>騎出去的時候，不只是代步，更像在路上展現自己的態度。下雨也騎、天氣熱也騎，就是愛它的那種感覺。</p>
-  <img src="S__136249455.jpg" alt="我的偉士牌" style="max-width:90%; margin: 30px auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+  <img src="S__136249455.jpg" alt="我的偉士牌">
   <div>
     <span class="tag">大四生</span>
     <span class="tag">喜歡改車</span>
